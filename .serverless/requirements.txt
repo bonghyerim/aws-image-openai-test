@@ -1,0 +1,4 @@
+Flask==1.1.4
+Werkzeug==1.0.1
+flask-restful
+markupsafe==2.0.1
