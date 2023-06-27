@@ -7,8 +7,8 @@
     "provider": {
       "name": "aws",
       "runtime": "python3.9",
-      "region": "ap-northeast-2",
       "stage": "dev",
+      "region": "us-east-1",
       "versionFunctions": true,
       "compiledCloudFormationTemplate": {
         "AWSTemplateFormatVersion": "2010-09-09",
@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/aws-image-openapi-test/dev/1687752812903-2023-06-26T04:13:32.903Z/aws-image-openapi-test.zip"
+                "S3Key": "serverless/aws-image-openapi-test/dev/1687769629963-2023-06-26T08:53:49.963Z/aws-image-openapi-test.zip"
               },
               "Handler": "wsgi_handler.handler",
               "Runtime": "python3.9",
@@ -192,14 +192,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionZZsRXaqd3VxmZchkQ85ji5zTKjsWObGjtPPPxcFBm8": {
+          "ApiLambdaVersionCJAjEiX94Rla2PHpMKhSXLl2EtY3gqggfktjwfkHiYg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "kyrqW7tpG7NoiIYWShjpwyZZuFVJmH4cJ3a/5fr8EXI="
+              "CodeSha256": "eBv2mlu6gZXm9jcAEVG86nxj10IMb65OKT4gf/TOaOQ="
             }
           },
           "HttpApi": {
@@ -307,7 +307,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionZZsRXaqd3VxmZchkQ85ji5zTKjsWObGjtPPPxcFBm8"
+              "Ref": "ApiLambdaVersionCJAjEiX94Rla2PHpMKhSXLl2EtY3gqggfktjwfkHiYg"
             },
             "Export": {
               "Name": "sls-aws-image-openapi-test-dev-ApiLambdaFunctionQualifiedArn"
@@ -458,7 +458,7 @@
         "timeout": 6,
         "runtime": "python3.9",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersionZZsRXaqd3VxmZchkQ85ji5zTKjsWObGjtPPPxcFBm8"
+        "versionLogicalId": "ApiLambdaVersionCJAjEiX94Rla2PHpMKhSXLl2EtY3gqggfktjwfkHiYg"
       }
     },
     "configValidationMode": "warn",
@@ -484,7 +484,7 @@
     "artifact": "C:\\Users\\405\\Documents\\GitHub\\aws-image-openapi-test\\.serverless\\aws-image-openapi-test.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/aws-image-openapi-test/dev/1687752812903-2023-06-26T04:13:32.903Z",
+    "artifactDirectoryName": "serverless/aws-image-openapi-test/dev/1687769629963-2023-06-26T08:53:49.963Z",
     "artifact": "aws-image-openapi-test.zip"
   }
 }
