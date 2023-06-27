@@ -29,9 +29,9 @@ class TranslateResource(Resource):
 
         print(response.json())
         
-        print()
+        # print()
 
-        print(response.json()['message']['result']['translatedText'])
+        # print(response.json()['message']['result']['translatedText'])
         
         
         text = response.json()['message']['result']['translatedText']
