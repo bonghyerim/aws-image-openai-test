@@ -36,7 +36,6 @@ class NewsSearchResource(Resource) :
         return {'result' : 'success',
                 'count' : len(items) ,
                 'items' : items }
-    
 
 
 
